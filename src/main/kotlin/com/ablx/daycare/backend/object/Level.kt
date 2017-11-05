@@ -5,17 +5,18 @@ enum class Level(val level: Int ) {
     MEDIUM(5),
     BAD(0);
 
-    fun fromCode(level: Int): Level {
-        when (level) {
-            0 -> return BAD
-            5 -> return MEDIUM
-            10 -> return GOOD
+    companion object {
+        fun fromCode(level: Int): Level {
+            when (level) {
+                0 -> return BAD
+                5 -> return MEDIUM
+                10 -> return GOOD
+                else ->
+                    throw IllegalArgumentException("Invalid level " + level)
+            }
 
-            else ->
-                // do we need this? if for nothing else it catches forgotten case
-                // when enum is modified
-                throw IllegalArgumentException("Invalid level " + level!!)
         }
-
     }
+
+
 }
