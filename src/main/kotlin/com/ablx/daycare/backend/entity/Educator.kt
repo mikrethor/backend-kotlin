@@ -6,6 +6,7 @@ import javax.persistence.Id
 
 @Entity
 internal data class Educator(
-        @field: Id @field: GeneratedValue var Id : Long = 0 //Primary Key
-
+        @field: Id @field: GeneratedValue var Id : Long = 0, //Primary Key
+        var name:String = "",
+        var surname:String = ""
 )

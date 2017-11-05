@@ -1,4 +1,4 @@
-package com.ablx.daycare.backend.`object`
+package com.ablx.daycare.backend.objects
 
 enum class Level(val level: Int ) {
     GOOD(10),

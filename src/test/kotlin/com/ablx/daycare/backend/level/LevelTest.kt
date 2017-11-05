@@ -1,8 +1,7 @@
 package com.ablx.daycare.backend.level
 
-import com.ablx.daycare.backend.`object`.Level
+import com.ablx.daycare.backend.objects.Level
 import org.junit.Assert
-import org.junit.Assert.assertEquals
 import org.junit.Test
 
 class LevelTest{
