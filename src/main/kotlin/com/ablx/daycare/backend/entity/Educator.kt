@@ -7,7 +7,11 @@ internal data class Educator(
         @field: Id @field: GeneratedValue var Id : Long = 0, //Primary Key
         var firstname:String = "",
         var lastname:String = "",
-        @ManyToOne(fetch = FetchType.EAGER)
-        @JoinColumn(name = "daycare_id")
+        @ManyToOne(fetch = FetchType.LAZY)
+        @JoinColumn(name = "daycare")
         var daycare : Daycare=Daycare()
-)
+){
+    init {
+
+    }
+}
