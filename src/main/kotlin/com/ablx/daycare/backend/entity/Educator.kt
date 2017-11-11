@@ -1,12 +1,13 @@
 package com.ablx.daycare.backend.entity
 
-import javax.persistence.Entity
-import javax.persistence.GeneratedValue
-import javax.persistence.Id
+import javax.persistence.*
 
 @Entity
 internal data class Educator(
         @field: Id @field: GeneratedValue var Id : Long = 0, //Primary Key
-        var name:String = "",
-        var surname:String = ""
+        var firstname:String = "",
+        var lastname:String = "",
+        @ManyToOne(fetch = FetchType.EAGER)
+        @JoinColumn(name = "daycare_id")
+        var daycare : Daycare=Daycare()
 )

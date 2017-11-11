@@ -14,9 +14,6 @@ enum class Level(val level: Int ) {
                 else ->
                     throw IllegalArgumentException("Invalid level " + level)
             }
-
         }
     }
-
-
 }
