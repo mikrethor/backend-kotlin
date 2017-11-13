@@ -1,7 +1,7 @@
 insert into DAYCARE("ID", "NAME") values (1, 'Ma garderie');
 --insert into ADMIN("ID") values (1);
---insert into PARENT("ID","DAYCARE_ID","FIRSTNAME", "LASTNAME") values (1,1,'Xavier','B');
---insert into PARENT("ID","DAYCARE_ID","FIRSTNAME", "LASTNAME") values (2,1,'Bérengère','B');
+insert into PARENT("ID","DAYCARE","FIRSTNAME", "LASTNAME") values (1,1,'Xavier','B');
+insert into PARENT("ID","DAYCARE","FIRSTNAME", "LASTNAME") values (2,1,'Bérengère','B');
 
 insert into EDUCATOR("ID","DAYCARE","FIRSTNAME", "LASTNAME") values (1,1,'Marie-Josée', 'YMCA');
 insert into EDUCATOR("ID","DAYCARE","FIRSTNAME", "LASTNAME") values (2,1,'Bérengère', 'CB');
