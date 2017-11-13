@@ -10,8 +10,4 @@ internal data class Educator(
         @ManyToOne(fetch = FetchType.LAZY)
         @JoinColumn(name = "daycare")
         var daycare : Daycare=Daycare()
-){
-    init {
-
-    }
-}
+)

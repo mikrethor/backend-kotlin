@@ -10,9 +10,4 @@ internal data class Daycare(
         var educators: List<Educator> = emptyList(),
         @OneToMany(mappedBy = "daycare", cascade = arrayOf(CascadeType.ALL), fetch = FetchType.LAZY)
         var children: List<Child> = emptyList()
-){
-
-    init {
-
-    }
-}
+)
