@@ -11,7 +11,7 @@ class LevelTest{
         try {
             Level.fromCode(89)
         }catch (e:IllegalArgumentException){
-            Assert.assertTrue(true)
+            Assert.assertEquals("Invalid level 89",e.message)
         }
     }
 
