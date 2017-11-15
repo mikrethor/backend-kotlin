@@ -1,8 +1,7 @@
 package com.ablx.daycare.backend.entity
 
-import java.util.*
-
 import com.ablx.daycare.backend.objects.Level
+import java.util.*
 import javax.persistence.*
 
 @Entity
