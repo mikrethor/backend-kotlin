@@ -6,14 +6,13 @@ enum class Level(val level: Int ) {
     BAD(0);
 
     companion object {
-        fun fromCode(level: Int): Level {
-            return when (level) {
-                0 ->  BAD
-                5 ->  MEDIUM
-                10 ->  GOOD
-                else ->
-                    throw IllegalArgumentException("Invalid level $level")
-            }
-        }
+        fun fromCode(level: Int) =
+                when (level) {
+                    0 ->  BAD
+                    5 ->  MEDIUM
+                    10 ->  GOOD
+                    else ->
+                        throw IllegalArgumentException("Invalid level $level")
+                }
     }
 }
