@@ -29,6 +29,4 @@ class LevelTest{
     fun level10IntValueToGood() {
         Assert.assertEquals(Level.GOOD,Level.fromCode(10))
     }
-
-
 }
