@@ -10,7 +10,7 @@ class LevelTest{
     fun levelOtherIntValue() {
         try {
             Level.fromCode(89)
-        }catch (e:IllegalArgumentException){
+        }catch (e:Error){
             Assert.assertEquals("Invalid level 89",e.message)
         }
     }

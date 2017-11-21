@@ -12,7 +12,7 @@ enum class Level(val level: Int ) {
                     5 ->  MEDIUM
                     10 ->  GOOD
                     else ->
-                        throw IllegalArgumentException("Invalid level $level")
+                        Error("Invalid level $level")
                 }
     }
 }
